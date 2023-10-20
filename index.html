@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amisha Ji</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background: rgb(91, 242, 187);
+            text-align: center;
+            font-family: 'IBM Plex Sans Condensed', sans-serif;
+            font-family: 'Poppins', sans-serif;
+        }
+        h3{
+            margin: 30px 0px;
+            font-size: 30px;
+        }
+        .form-container{
+            background: white;
+            padding: 30px 50px;
+            width: 80%;
+            margin: 0px auto;
+        }
+        input, select{
+            padding: 0px 5px;
+            height: 30px;
+            border-radius: 5px;
+        }
+        .field-container{
+            padding: 0px;
+            margin: 20px;
+        }
+        button{
+            background: rebeccapurple;
+            color: white;
+            padding: 10px 20px;
+            border: 0px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>Survey Form</h3>
+        <div class="form-container">
+            <form action="/surveys/store" method="POST">
+                <p>Let us know how we can improve code camp</p>
+                <div class="field-container">
+                    <label for="name">First Name</label>
+                    <input type="text" placeholder="Enter your first name" />
+                </div>
+                <div class="field-container">
+                    <label for="name">Last Name</label>
+                    <input type="text" placeholder="Enter your last name" />
+                </div>
+                <div class="field-container">
+                    <label for="name">Email</label>
+                    <input type="email" placeholder="Enter your email" />
+                </div>
+                <div class="field-container">
+                    <label for="name">Phone Number</label>
+                    <input type="phone" placeholder="Enter your phone number" />
+                </div>
+                <div class="field-container">
+                    <label for="name">Gender</label>
+                    </br>
+                    <input type="radio" name="gender"  value="male"/>
+                    Male
+                    </br>
+                    <input type="radio" name="gender" value="female"/>
+                    Female
+                </div>
+                <div class="field-container">
+                    <label for="name">Address</label>
+                    <textarea value="Enter your name" rows="15" cols="100"></textarea>
+                </div>
+                <div class="field-container">
+                    <label for="name">Name</label>
+                    <select>
+                        <option>Student</option>
+                        <option>Parent</option>
+                        <option>Teacher</option>
+                    </select>
+                </div>
+                <div class="field-container">
+                    <label for="name">Gender</label>
+                    </br>
+                    <input type="checkbox" name="english"  value="english"/>
+                    English
+                    </br>
+                    <input type="checkbox" name="hindi" value="hindi"/>
+                    Hindi
+                </div>
+                <button>Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
